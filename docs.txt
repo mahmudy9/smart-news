@@ -1,0 +1,140 @@
+database::
+    1.users => 
+               1.name
+               2.email
+               3.password
+               4.phone
+               5.image->nullable
+               6.active_code
+                ------------------------------------------                    
+                                    user_role => 1.user_id
+                                                 2.role_id
+                ------------------------------------------
+    2.roles => 1.id             
+               2.name
+
+
+    2.categories => 
+                    1.id
+                    2.name    
+                    
+    3.articles =>            
+                    1.id   
+                    2.title
+                    3.file -> nullable
+                    4.body
+                    5.category_id
+
+
+    4.article_shares =>     1.id
+                            2.article_id
+                            3.user_id
+
+    5.article_likes =>      1.id
+                            2.article_id
+                            3.user_id
+
+    6.comments  =>  
+                    1.id
+                    2.user_id
+                    3.article_id
+                    4.body
+
+    7.comment_likes => 
+                        1.id
+                        2.comment_id
+                        3.user_id
+
+    8.replies  =>   1.id
+                    2.comment_id
+                    3.user_id
+                    4.article_id
+                    5.reply
+
+    9.searchlist => 1.id
+                    2.user_id
+                    3.search
+
+    10.notifications =>     
+                        1.id
+                        2.user_id
+                        3.title
+                        4.body
+
+    11.article_keywords =>
+                            1.id
+                            2.article_id
+                            3.keyword
+
+    12.reports    =>    
+                        1.id
+                        2.comment_id
+                        3.user_id
+                        4.article_id
+
+    13.messages  =>
+                        1.id
+                        2.user_id
+                        3.message
+
+    14.about_us =>      1.id
+                        2.content
+
+    15.bookmarks =>     1.id
+                        2.user_id
+                        3.article_id
+
+
+
+
+admin functions ==>>
+                        //1.create article
+                        //delete articles
+                        //2.create category
+                        //3.see users
+                        //4.delete users
+                        //5.view comments
+                        //6.view reports
+                        //7.delete comments
+                        //8.delete reports
+                        //9.view replies
+                        //10.delete replies
+                        //11.edit articles
+                        //12.view shares
+                        //..delete messages
+                        //14.view messages
+                        //15.view bookmarks
+                        //16.create keyword
+                        //17.view searchs
+                        //18.view notifications
+
+
+User Functions ===>  
+                        1.register
+                        2.login
+                        3.logout
+                        4.index
+                        5.article by category
+                        6.article by keyword
+                        7.keywords
+                        8.search
+                        9.my search list
+                        10.my profile
+                        ..comment on article->notification for admin
+                        ..reply to comment->notification for comment user
+                        ..report comment->notification for admin
+                        11.like on article
+                        dislike article
+                        12.like on comment->notification for comment user
+                        dislike comment
+                        13.like on reply->notification for reply user
+                        dislike reply
+                        14.share article-> notification for admin
+                        15.bookmark article
+                        16.my bookmarks
+                        17.my shares
+                        18.change password;
+                        19.contact
+                        20.about
+                        21.notifications
+                        
