@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Category;
 use Validator;
 use App\User;
@@ -285,7 +286,7 @@ class AdminController extends Controller
     }
 
 
-    public function vew_replies()
+    public function view_replies()
     {
         $replies = Reply::paginate(20);
         return view('admin.replylist' , compact('replies'));

@@ -53,59 +53,46 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin')}}">
                   <span data-feather="file"></span>
                   Index
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/createarticle')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Create Article
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/categories')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Categories
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('admin/userslist')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Users List
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/reports')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Reports
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('admin/comments')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Comments list
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/replies')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Replies List
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/messages')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Messages
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/mynotifications')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  MY Notifications
                 </a>
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{url('/admin/notifications')}}">
                   <span data-feather="file"></span>
-                  Orders
+                  Notifications list
                 </a>
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-
               </li>
             
             </ul>
